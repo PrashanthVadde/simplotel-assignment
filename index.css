@@ -1,0 +1,533 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+}
+
+.app-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+
+#small-device-nav-bar {
+    display: flex;
+}
+
+#small-device-nav-option {
+    color: #200E3A;
+}
+
+.nav-bar {
+    height: 40px;
+    width: 100%;
+    background-color: #fb5d5d;
+    display: none;
+    
+}
+
+.navbar-image {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.nav-bar-option {
+    font-family: play fair display;
+    font-size: 16px;
+    font-weight: 600;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+#menu-option {
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    font-weight: 900;
+}
+
+.top-page {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.top-page-text {
+    background-image: linear-gradient( to right, #f4ed80, #edb8cd);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.top-page-title {
+    font-family: Roboto Mono;
+    font-size: 28px;
+    font-weight: 800;
+    
+}
+
+.top-page-description {
+    color: #200E3A;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.click-me-btn {
+    color: white;
+    background-color: #FA7070;
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 10px;
+    width: 160px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.top-page-img {
+    width: 100%;
+    height: 50%;
+}
+
+.bottom-page {
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient( to right, #f4ed80, #f3b3cc);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottom-page-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 90%;
+}
+
+.img-1 {
+    height: 130px;
+    width: 160px;
+}
+
+.img-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    height: 100%;
+    width: 160px;
+}
+
+.img-3 {
+    height: 130px;
+    width: 160px;
+}
+
+.bottom-page-text {
+    background-color: #fb5d5d;
+    padding: 18px;
+    width: 70%;
+    
+}
+
+.bottom-page-title {
+    font-family: Roboto;
+    font-size: 14px;
+    margin-top: 0;
+
+}
+
+.bottom-page-description {
+    font-family: Roboto Mono;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.bottom-page-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 14px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right-arrow {
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    
+}
+
+@media screen and (min-width: 764px) and (max-width: 1023px) {
+    .app-container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #small-device-nav-bar {
+        display: none;
+    }
+    
+    .nav-bar {
+        height: 45px;
+        width: 100%;
+        background-color: #fb5d5d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-bar-option {
+        font-family: play fair display;
+        font-size: 18px;
+        font-weight: 600;
+    
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+    #menu-option {
+        background-color: transparent;
+        border: none;
+        height: 30px;
+        width: 30px;
+        font-weight: 900;
+    }
+    
+    .top-page {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .top-page-text {
+        background-image: linear-gradient( to right, #f4ed80, #edb8cd);
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    
+    }
+    
+    .top-page-title {
+        font-family: Roboto Mono;
+        font-size: 40px;
+        font-weight: 800;
+        
+    }
+    
+    .top-page-description {
+        color: #200E3A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+    }
+    
+    .click-me-btn {
+        color: white;
+        background-color: #FA7070;
+        font-family: Roboto;
+        font-size: 16px;
+        padding: 10px;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 30px;
+    
+    }
+    
+    .top-page-img {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .bottom-page {
+        height: 600px;
+        width: 100%;
+        background-image: linear-gradient( to right, #f4ed80, #f3b3cc);
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .bottom-page-images {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 40%;
+    }
+    
+    .img-1 {
+        height: 160px;
+        width: 200px;
+    }
+    
+    .img-2 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        height: 100%;
+        width: 200px;
+    }
+    
+    .img-3 {
+        height: 160px;
+        width: 200px;
+    }
+    
+    .bottom-page-text {
+        background-color: #fb5d5d;
+        padding: 20px;
+        width: 30%;  
+    }
+    
+    .bottom-page-title {
+        font-family: Roboto;
+        font-size: 14px;
+        margin-top: 0;
+    
+    }
+    
+    .bottom-page-description {
+        font-family: Roboto Mono;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .bottom-page-btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 14px;
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #right-arrow {
+        font-weight: bold;
+        height: 20px;
+        width: 20px;
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .app-container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #small-device-nav-bar {
+        display: none;
+    }
+    
+    .nav-bar {
+        height: 50px;
+        width: 100%;
+        background-color: #fb5d5d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-bar-option {
+        font-family: play fair display;
+        font-size: 22px;
+        font-weight: 600;
+    
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    
+    #menu-option {
+        background-color: transparent;
+        border: none;
+        height: 30px;
+        width: 30px;
+        font-weight: 900;
+    }
+    
+    .top-page {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .top-page-text {
+        background-image: linear-gradient( to right, #f4ed80, #edb8cd);
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    
+    .top-page-title {
+        font-family: Roboto Mono;
+        font-size: 52px;
+        font-weight: 800;
+        
+    }
+    
+    .top-page-description {
+        color: #200E3A;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+        margin-top: 30px;
+    }
+    
+    .click-me-btn {
+        color: white;
+        background-color: #FA7070;
+        font-family: Roboto;
+        font-size: 16px;
+        padding: 10px;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 30px;
+    
+    }
+    
+    .top-page-img {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .bottom-page {
+        height: 600px;
+        width: 100%;
+        background-image: linear-gradient( to right, #f4ed80, #f3b3cc);
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom-page-images {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 40%;
+    }
+    
+    .img-1 {
+        height: 200px;
+        width: 240px;
+    }
+    
+    .img-2 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        height: 100%;
+        width: 240px;
+    }
+    
+    .img-3 {
+        height: 200px;
+        width: 240px;
+    }
+    
+    .bottom-page-text {
+        background-color: #fb5d5d;
+        padding: 30px;
+        width: 33%;
+        margin-left: 20px;
+        
+    }
+    
+    .bottom-page-title {
+        font-family: Roboto;
+        font-size: 20px;
+        margin-top: 0;
+    
+    }
+    
+    .bottom-page-description {
+        font-family: Roboto Mono;
+        font-size: 42px;
+        font-weight: bold;
+    }
+    
+    .bottom-page-btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 18px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #right-arrow {
+        font-weight: bold;
+        height: 30px;
+        width: 30px;
+        
+    }
+}
